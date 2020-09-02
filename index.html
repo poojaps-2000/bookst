@@ -8,46 +8,85 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
-  </head>
-  <body>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+<link href="https://fonts.googleapis.com/css2?family=Allura&display=swap" rel="stylesheet">
+<body>
     <!-- <h1>BOOKSTORE</h1> -->
+
     <style>
+    .navbar-brand{
+      font-family: 'Allura', cursive;
+    }
+    .fa:hover {
+      opacity: 0.7;
+      }
+      .fa-google{
+        color:red;
+      }
+      .fa-facebook{
+        color:#3b5998;
+      }
+      .fa-twitter{
+        color:#00acee;
+      }
       #img1{
-        height:200px;
-        width:150px;
+        height:250px;
+        width:200px;
         }
       .list-unstyled{
         padding-left:40px;
         padding-right:40px;
       }
+
+      #pgf{
+        background: #1f1e1e;
+        color: floralwhite;
+      }
+      #we{
+        align-items: center;
+      }
+      .nav-item{
+        color: floralwhite;
+      }
     </style>
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-  <a class="navbar-brand" href="#">BOOKSTORE</a>
+<nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+  <a class="navbar-brand nav-item-active" href="index.html">BOOKSTORE</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
 
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
-      <li class="nav-item active">
-        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+      <!-- <li class="nav-item active">
+        <a class="nav-link btn btn-home" href="index.html">
+          <i class="fa fa-home fa-lg"></i>
+        <span class="sr-only">(current)</span></a>
+
+      </li> -->
+      <li class="nav-item">
+        <a class="nav-link" href="bs.html">Best Sellers</a>
       </li>
-      <!-- <li class="nav-item">
-        <a class="nav-link" href="#">Contact</a>
+      <li class="nav-item">
+        <a class="nav-link" href="latest.html">Latest</a>
       </li>
       <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Dropdown
+          Genres
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="#">Action</a>
-          <a class="dropdown-item" href="#">Another action</a>
-          <div class="dropdown-divider"></div>
-          <a class="dropdown-item" href="#">Something else here</a>
-        </div>
-      </li> -->
+          <a class="dropdown-item" href="action.html">Action</a>
+          <a class="dropdown-item" href="fiction.html">Fiction</a>
+          <a class="dropdown-item" href="horror.html">Horror</a>
+          <a class="dropdown-item" href="mystery.html">Mystery</a>
+          <a class="dropdown-item" href="novel.html">Novel</a>
+          <a class="dropdown-item" href="romance.html">Romance</a>
+          <a class="dropdown-item" href="science.html">Science</a>
+
+
+      </li>
     </ul>
     <form class="form-inline my-2 my-lg-0">
+      <p style="color:floralwhite;">Title / Author &nbsp;</p>
       <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
       <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
     </form>
@@ -55,7 +94,7 @@
 </nav>
 
 <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-  <div class="carousel-inner" style="width:100%; height: 350px !important;">
+  <div class="carousel-inner" style="width:100%; height: 400px !important;">
     <div class="carousel-item active">
       <img class="d-block w-100" src="https://images2.alphacoders.com/261/thumb-1920-26102.jpg" alt="First slide">
     </div>
@@ -79,46 +118,44 @@
   <div class="container" style="padding-top:20px">
     <div class="row">
       <div class="col-sm-12 jumbotron">
-        <h1 class="haeder"><strong>ABOUT</strong></h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-        </p>
-      </div>
+        <h1 class="haeder"><strong>WHY read books ?</strong></h1>
+        <p>Books are like a treasure, sometimes a treasure of knowledge, sometimes of learning new skills and sometimes of entertainment. The key to this treasure chest lies in acquiring the skill to read. Once that is done, a new world opens out to you. And the surprises and gems in this are never ending. The world of reading books is equally endless. From ancient times, whatever knowledge has been acquired, and recorded, about any subject under the sun, you will find in books.</p>
+    </div>
     </div>
   </div>
-
+<div class="container jumbotron">
   <ul class="list-unstyled">
       <li class="media">
-        <img class="d-flex mr-3 img-thumbnail align-self-center" id="img1" src="https://images-na.ssl-images-amazon.com/images/I/71aFt4+OTOL.jpg" alt="Generic placeholder image">
+        <img class="d-flex mr-3 img-thumbnail align-self-center" id="img1" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1569616608l/46060957.jpg" alt="Generic placeholder image">
         <div class="media-body row">
-          <h5 class="mt-0 meida-heading mb-1 align-self-center"><strong>THE ALCHEMIST</strong>
+          <h5 class="mt-0 meida-heading mb-1"><strong>THE GLASS HOTEL</strong>
           <span class="badge badge-pill badge-warning">NEW</span>
           <blockquote class="blockquote"><br>
-            <footer class="blockquote-footer">&nbsp;&nbsp;&nbsp;Paulo Coelho</footer>
+            <footer class="blockquote-footer">&nbsp;&nbsp;&nbsp;Emily St. John Mandel </footer>
           </blockquote>
         </h5><br>
-          <p class="d-none d-md-block">
-            The Alchemist by Paulo Coelho continues to change the lives of its readers forever. With more than two million copies sold around the world, The Alchemist has established itself as a modern classic, universally admired.Paulo Coelho's masterpiece tells the magical story of Santiago, an Andalusian shepherd boy who yearns to travel in search of a worldly treasure as extravagant as any ever found.The story of the treasures Santiago finds along the way teaches us, as only a few stories can, about the essential wisdom of listening to our hearts, learning to read the omens strewn along life's path, and, above all, following our dreams.
+          <p class="d-none d-md-block">From the award-winning author of Station Eleven, a captivating novel of money, beauty, white-collar crime, ghosts, and moral compromise in which a woman disappears from a container ship off the coast of Mauritania and a massive Ponzi scheme implodes in New York, dragging countless fortunes with it.
           </p>
       </li><br>
 
       <li class="media">
-        <img class="d-flex mr-3 img-thumbnail align-self-center" id="img1" src="https://images-na.ssl-images-amazon.com/images/I/71aFt4+OTOL.jpg" alt="Generic placeholder image">
+        <img class="d-flex mr-3 img-thumbnail align-self-center" id="img1" src="https://www.haydenplanetarium.org/tyson/media/images/books/2017-05-AstrophysForPeopleHurry1024.jpg" alt="Generic placeholder image">
         <div class="media-body row">
-          <h5 class="mt-0 meida-heading mb-1 align-self-center"><strong>THE ALCHEMIST</strong>
-          <span class="badge badge-pill badge-secondary">INSPIRATIONAL</span>
+          <h5 class="mt-0 media-heading mb-1"><strong>ASTROPHYSICS for PEOPLE in a HURRY</strong>
+          <span class="badge badge-pill badge-info">SCIENCE</span>
           <blockquote class="blockquote"><br>
-            <footer class="blockquote-footer">&nbsp;&nbsp;&nbsp;Paulo Coelho</footer>
+            <footer class="blockquote-footer">&nbsp;&nbsp;&nbsp;Neil deGrasse Tyson</footer>
           </blockquote>
         </h5><br>
-          <p class="d-none d-md-block">
-            The Alchemist by Paulo Coelho continues to change the lives of its readers forever. With more than two million copies sold around the world, The Alchemist has established itself as a modern classic, universally admired.Paulo Coelho's masterpiece tells the magical story of Santiago, an Andalusian shepherd boy who yearns to travel in search of a worldly treasure as extravagant as any ever found.The story of the treasures Santiago finds along the way teaches us, as only a few stories can, about the essential wisdom of listening to our hearts, learning to read the omens strewn along life's path, and, above all, following our dreams.
+          <p class="d-none d-md-block">What is the nature of space and time? How do we fit within the universe? How does the universe fit within us? There’s no better guide through these mind-expanding questions than acclaimed astrophysicist and best-selling author Neil deGrasse Tyson.
+But today, few of us have time to contemplate the cosmos. So Tyson brings the universe down to Earth succinctly and clearly, with sparkling wit, in tasty chapters consumable anytime and anywhere in your busy day.
           </p>
       </li><br>
 
       <li class="media">
         <img class="d-flex mr-3 img-thumbnail align-self-center" id="img1" src="https://images-na.ssl-images-amazon.com/images/I/71aFt4+OTOL.jpg" alt="Generic placeholder image">
         <div class="media-body row">
-          <h5 class="mt-0 meida-heading mb-1 align-self-center"><strong>THE ALCHEMIST</strong>
+          <h5 class="mt-0 meida-heading mb-1"><strong>THE ALCHEMIST</strong>
           <span class="badge badge-pill badge-success">BEST SELER</span>
           <blockquote class="blockquote"><br>
             <footer class="blockquote-footer">&nbsp;&nbsp;&nbsp;Paulo Coelho</footer>
@@ -130,20 +167,41 @@
       </li><br>
 
       <li class="media">
-        <img class="d-flex mr-3 img-thumbnail align-self-center" id="img1" src="https://images-na.ssl-images-amazon.com/images/I/71aFt4+OTOL.jpg" alt="Generic placeholder image">
+        <img class="d-flex mr-3 img-thumbnail align-self-center" id="img1" src="https://upload.wikimedia.org/wikipedia/en/a/a9/The_Fault_in_Our_Stars.jpg" alt="Generic placeholder image">
         <div class="media-body row">
-          <h5 class="mt-0 meida-heading mb-1 align-self-center"><strong>THE ALCHEMIST</strong>
-          <span class="badge badge-pill badge-danger">LOVE</span>
+          <h5 class="mt-0 meida-heading mb-1"><strong>THE FAULT IN OUR STARS</strong>
+          <span class="badge badge-pill badge-danger">ROMANCE</span>
           <blockquote class="blockquote"><br>
-            <footer class="blockquote-footer">&nbsp;&nbsp;&nbsp;Paulo Coelho</footer>
+            <footer class="blockquote-footer">&nbsp;&nbsp;&nbsp;John Green</footer>
           </blockquote>
         </h5><br>
-          <p class="d-none d-md-block">
-            The Alchemist by Paulo Coelho continues to change the lives of its readers forever. With more than two million copies sold around the world, The Alchemist has established itself as a modern classic, universally admired.Paulo Coelho's masterpiece tells the magical story of Santiago, an Andalusian shepherd boy who yearns to travel in search of a worldly treasure as extravagant as any ever found.The story of the treasures Santiago finds along the way teaches us, as only a few stories can, about the essential wisdom of listening to our hearts, learning to read the omens strewn along life's path, and, above all, following our dreams.
+          <p class="d-none d-md-block">The Fault in our Stars is a book for everyone, be it people in their old age, or teens studying in school, this book is an ideal feel good and emotional novel for all. Written by John Green and published by Penguin UK, in the year 2013, this book has gone on to become a major seller in all parts of the world. It has sold more than ten million copies worldwide.
           </p>
       </li><br>
   </ul>
+</div>
+<!-- footer -->
+<!-- Footer -->
+<footer class="page-footer font-small blue pt-4" id="pgf">
+  <div class="container-fluid text-center text-md-left">
+    <div class="row justify-content-center">
+      <div class="">
+        <a class="btn btn-social-icon btn-google ml-10" href="https://www.google.com/">
+            <i class ="fa fa-google fa-lg"></i>
+        </a>&nbsp;
+        <a class="btn btn-social-icon btn-facebook" href="https://www.googleadservices.com/pagead/aclk?sa=L&ai=DChcSEwihvu-0scrrAhVPHSsKHaWsCNQYABAAGgJzZg&ohost=www.google.com&cid=CAESQeD2rHTFqVaZSogElfGqXEIshwicv4v66sahqp-ZKNWBtAnwwcouSn76XYcMmSi7jufWTp3qqIqRFHBfm_RPInC6&sig=AOD64_2IqWlMA72NzWDbAkN70z2DGTr9rQ&q&adurl&ved=2ahUKEwj2_-a0scrrAhVFWX0KHTCnARkQ0Qx6BAgqEAE">
+            <i class ="fa fa-facebook fa-lg"></i>
+        </a>&nbsp;
+        <a class="btn btn-social-icon btn-twitter" href="https://twitter.com/?lang=en">
+            <i class ="fa fa-twitter fa-lg"></i>
+        </a>
+      </div>
+  </div>
 
+  <div class="footer-copyright text-center py-3">© 2020 Copyright:PoojaPS</div>
+  </div>
+</footer>
+<!-- Footer -->
 
 
   </body>
